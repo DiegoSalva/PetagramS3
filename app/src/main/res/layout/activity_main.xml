@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.diegosalva.petagram.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
     android:background="@color/colorFondo">
 
-    <include android:id="@+id/miActionbar"
-        layout="@layout/actionbar"></include>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvMascotas"
+
+    <android.support.design.widget.AppBarLayout
+
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/miActionbar"
-        android:layout_centerHorizontal="true">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <include android:id="@+id/miActionbar"
+            layout="@layout/actionbar"></include>
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolBar"
 
-    </android.support.v7.widget.RecyclerView>
+            app:layout_scrollFlags="scroll|enterAlways"
+            >
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
+            </android.support.design.widget.TabLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_margin="15dp"
-        android:layout_alignBottom="@+id/rvMascotas"
-        android:src="@drawable/cam">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
 
-    </android.support.design.widget.FloatingActionButton>
+    </android.support.v4.view.ViewPager>
 
 
-</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

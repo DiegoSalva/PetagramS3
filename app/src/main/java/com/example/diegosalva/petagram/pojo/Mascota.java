@@ -1,4 +1,4 @@
-package com.example.diegosalva.petagram;
+package com.example.diegosalva.petagram.pojo;
 
 /**
  * Created by DIEGO SALVA on 29/05/2016.

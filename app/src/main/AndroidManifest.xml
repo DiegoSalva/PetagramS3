@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/cat_footprint_48"
+        android:icon="@drawable/footprint"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -15,12 +15,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Favoritos"
+        <activity
+            android:name=".Favoritos"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"></meta-data>
+                android:value=".MainActivity" />
         </activity>
+        <activity android:name=".menuopciones.Contacto" />
+        <activity android:name=".menuopciones.Acerca"></activity>
     </application>
 
 </manifest>

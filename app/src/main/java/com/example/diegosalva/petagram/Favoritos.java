@@ -1,11 +1,13 @@
 package com.example.diegosalva.petagram;
 
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
+import com.example.diegosalva.petagram.pojo.Mascota;
+import com.example.diegosalva.petagram.adapter.MascotaAdaptador;
 
 import java.util.ArrayList;
 

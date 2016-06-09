@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.diegosalva.petagram.Favoritos">
+    tools:context=".Favoritos">
 
     <include android:id="@+id/miActionbar"
         layout="@layout/actionbar"></include>

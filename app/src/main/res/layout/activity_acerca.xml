@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuopciones.Acerca">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"/>
+
+    <TextView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/tvAcercaDeNombre"
+        android:layout_below="@+id/miActionBar"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:text="Diego Salvá"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/tvAcercaDeTitulo"
+        android:layout_below="@+id/tvAcercaDeNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ing. de alimentos"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/tvAcercaDeSubt"
+        android:layout_below="@+id/tvAcercaDeTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PucarApp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/tvAcercaLink"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/tvAcercaDeSubt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:clickable="true"
+        android:text="https://pe.linkedin.com/in/diegosalvalkn"
+        />
+
+</RelativeLayout>

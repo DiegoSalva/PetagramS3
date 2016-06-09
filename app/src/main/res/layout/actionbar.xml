@@ -10,23 +10,41 @@
     android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
     >
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/cat_footprint_48"
-        android:layout_gravity="start"
-        android:paddingLeft="0dp"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/footprint"
+        android:layout_alignParentLeft="true"
         android:id="@+id/ivLogo"
         />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:text="@string/titulo"
+        android:gravity="center"
         android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="@color/colorTitulo"
         android:layout_gravity="center"
         android:id="@+id/tvTitulo"/>
+
+    <ImageView
+        android:id="@+id/imgFiveStarts"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/star"
+        android:layout_alignParentRight="true"
+        android:onClick="irFavoritos"
+
+        />
+
+    </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
